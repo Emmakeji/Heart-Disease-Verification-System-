@@ -1,0 +1,34 @@
+{% load static %}
+
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="fonts/font-awesome.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <title> Heart Disease Prediction </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+       
+    </head> 
+    <body>
+        <div class="container main-container">
+            <div class="row main-body">
+                <div class="left-cont col-xs-12 col-md-5 col-sm-5 col-lg-5">
+                    <div class="img-cont">
+                        {% block side_image %}
+                        {% endblock side_image %}
+                    </div>
+                </div>
+                <div class="right-cont col-xs-12 col-md-7 col-sm-7 col-lg-7">
+                    <div class="text-cont">
+                        {% block cont %}
+                        {% endblock cont %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

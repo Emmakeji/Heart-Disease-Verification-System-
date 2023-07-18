@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block side_image %}
+    <img src="{% static 'images/heart.png' %}" alt="">
+{% endblock side_image %}
+
+{% block cont %}
+    <h1> Heart Disease Prediction System</h1>
+    <p>
+        This heart diesase prediction system is developed using XGBoost. The system uses 6 major medical parameters 
+        such as Chest pain type, Thalach (max heart rate achieved), Slope (slope of the peak exercise segment), 
+        RestECG, age, fasting blood sugar for prediction. 
+        The EHDPS predicts the likelihood of patients getting heart disease. 
+    </p>
+    <a href="/predict"><button>Predict</button></a>
+{% endblock cont %}
+                

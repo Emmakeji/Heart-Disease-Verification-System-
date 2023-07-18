@@ -1,0 +1,106 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(52, 52, 59), rgb(157, 64, 64));
+    background-size: cover;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+
+.img-cont{
+    width: 78%;
+    position: relative;
+    top: 100px;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+
+.img-cont img{
+    width: 100%;
+    
+}
+
+.right-cont{
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+.text-cont{
+    width: 80%;
+    float: right;
+    margin-top: 30%;
+    padding-left: 150px;
+}
+
+.pass {
+    font-size: 20pt;
+    text-align: center;
+    width: 70%;
+    color: white
+}
+
+.pass span{
+    color: green;
+    font-size: 40pt;
+}
+
+.failed{
+    font-size: 17pt;
+    text-align: center;
+    width: 80%;
+    color: white
+}
+
+@media(max-width: 760px){  
+
+    .img-cont{
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .img-cont img{
+        width: 50%;
+        
+    }
+
+    .right-cont{
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .text-cont{
+        width: 100%;
+        float: right;
+        margin-top: 30%;
+        padding-left: 0px;
+    }
+
+    .pass {
+        font-size: 16pt;
+        text-align: center;
+        width: 100%;
+        color: white;
+		padding: 20px;
+		margin-top: 200px;
+    }
+
+    .pass span{
+        color: green;
+        font-size: 25pt;
+		display: block;
+    }
+
+    .failed{
+        font-size: 13pt;
+        text-align: center;
+        width: 100%;
+        color: white;
+        padding: 20px;
+        margin-top: 130px;
+    }
